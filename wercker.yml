@@ -3,6 +3,8 @@ box: ubuntu
 build:
   # The steps that will be executed on build
   steps:
+    - install-packages:
+      packages: curl
     - script:
       name: step one
       code: echo "Step One"
