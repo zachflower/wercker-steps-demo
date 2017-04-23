@@ -8,28 +8,33 @@ build:
       code: echo "Step One"
     - script:
       name: step one complete
-      code: curl -X POST --data-urlencode 'payload="text": "Step One Complete (20% done)"}' $SLACK_WEBHOOK_URL
+      code: |
+        curl -X POST --data-urlencode 'payload="text": "Step One Complete (20% done)"}' $SLACK_WEBHOOK_URL
     - script:
       name: step two
       code: echo "Step Two"
     - script:
       name: step two complete
-      code: curl -X POST --data-urlencode 'payload="text": "Step Two Complete(40% done)"}' $SLACK_WEBHOOK_URL
+      code: |
+        curl -X POST --data-urlencode 'payload="text": "Step Two Complete(40% done)"}' $SLACK_WEBHOOK_URL
     - script:
       name: step three
       code: echo "Step Three"
     - script:
       name: step three complete
-      code: curl -X POST --data-urlencode 'payload="text": "Step Three Complete(60% done)"}' $SLACK_WEBHOOK_URL
+      code: |
+        curl -X POST --data-urlencode 'payload="text": "Step Three Complete(60% done)"}' $SLACK_WEBHOOK_URL
     - script:
       name: step four
       code: echo "Step Four"
     - script:
       name: step four complete
-      code: curl -X POST --data-urlencode 'payload="text": "Step Four Complete (80% done)"}' $SLACK_WEBHOOK_URL
+      code: |
+        curl -X POST --data-urlencode 'payload="text": "Step Four Complete (80% done)"}' $SLACK_WEBHOOK_URL
     - script:
       name: step five
       code: echo "Step Five"
     - script:
       name: step five complete
-      code: curl -X POST --data-urlencode 'payload="text": "Step Five Complete (100% done)"}' $SLACK_WEBHOOK_URL
+      code: |
+        curl -X POST --data-urlencode 'payload="text": "Step Five Complete (100% done)"}' $SLACK_WEBHOOK_URL
